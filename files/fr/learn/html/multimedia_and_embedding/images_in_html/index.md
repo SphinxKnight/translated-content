@@ -1,44 +1,35 @@
 ---
 title: Les images en HTML
 slug: Learn/HTML/Multimedia_and_embedding/Images_in_HTML
+l10n:
+  sourceCommit: 60fde748da525662fbc8eef4ba9fd242a33a6a57
 ---
 
 {{LearnSidebar}}{{NextMenu("Learn/HTML/Multimedia_and_embedding/Video_and_audio_content", "Learn/HTML/Multimedia_and_embedding")}}
 
-Au début, le Web n'était que du texte, ce qui était un peu ennuyeux. Heureusement, il n'a pas fallu longtemps pour que la possibilité d'intégrer des images ( et d'autres types de contenu intéressants) dans une page web soit ajoutée. Bien qu'il y ait plusieurs types de contenu multimedia, il est logique de commencer avec l'humble élément {{htmlelement("img")}}, utilisé pour intégrer une image dans une page web. Dans cet article, nous approfondirons son utilisation en abordant les principes fondamentaux, l'annotation par légendes utilisant {{htmlelement("figure")}}, et en analysant sa relation avec les images d'arrière-plan du {{glossary("CSS")}} .
+Au début, le Web n'était que du texte. Heureusement, il n'a pas fallu longtemps pour qu'il soit possible d'intégrer des images (et d'autres types de contenu) dans une page web. Bien qu'il y ait plusieurs types de contenu multimedia, nous commencerons par aborder l'élément [`<img>`](/fr/docs/Web/HTML/Element/img), utilisé pour intégrer une image dans une page web. Dans cet article, nous verrons en détails comment utiliser cet élément, en l'annotant avec des légendes grâce à [`<figure>`](/fr/docs/Web/HTML/Element/figure), et nous verrons le lien avec les images d'arrière-plan utilisées en [CSS](/fr/docs/Glossary/CSS).
 
 <table class="standard-table">
+<caption>Intégration d'images et de fichiers multimédia</caption>
   <tbody>
     <tr>
-      <th scope="row">Prérequis :</th>
+      <th scope="row">Prérequis&nbsp;:</th>
       <td>
-        Notions élémentaires en informatique,
-        <a
-          href="/fr/Apprendre/Commencer_avec_le_web/Installation_outils_de_base"
-          >installation des outils de base</a
-        >, bases de la
-        <a href="/fr/Apprendre/Commencer_avec_le_web/Gérer_les_fichiers"
-          >manipulation des fichiers</a
-        >, fondamentaux du HTML (comme décrit dans <a
-          href="/fr/Apprendre/HTML/Introduction_à_HTML/Getting_started"
-          >Commencer avec le Web).</a
-        >
+        Notions élémentaires en informatique, <a href="/fr/docs/Learn/Getting_started_with_the_web/Installing_basic_software">installation des outils de base</a>, bases de la <a href="/fr/docs/Learn/Getting_started_with_the_web/Dealing_with_files">manipulation des fichiers</a>, fondamentaux du HTML (comme décrit dans <a href="/fr/docs/Learn/HTML/Introduction_to_HTML/Getting_started">Commencer avec le Web).</a>
       </td>
     </tr>
     <tr>
-      <th scope="row">Objectifs :</th>
+      <th scope="row">Objectifs&nbsp;:</th>
       <td>
-        Apprendre à intégrer des images simples en HTML, à les légender d'un
-        intitulé, et à mettre en relation ces images HTML avec les images
-        d'arrière-plan du CSS.
+        Apprendre à intégrer des images simples en HTML, à les associer à une légende, et à faire le lien entre ces images HTML et les images d'arrière-plan utilisées en CSS.
       </td>
     </tr>
   </tbody>
 </table>
 
-## Comment intégrer une image à une page web ?
+## Comment intégrer une image à une page web&nbsp;?
 
-Pour mettre une image simple sur une page web, nous utiliserons l'élément {{htmlelement("img")}}. C'est un {{glossary("empty element","élément vide")}} (ce qui signifie qu'il ne contient ni texte ni balise de fermeture) qui demande au moins un attribut pour fonctionner — `src` (souvent appelé par son nom entier: _source_). L'attribut `src` contient un chemin pointant vers l'image que vous voulez intégrer, qui peut être une URL absolue ou relative, de la même manière que l'élément {{htmlelement("a")}} `href=` attribue des valeurs.
+Pour mettre une image simple sur une page web, nous utiliserons l'élément [`<img>`](/fr/docs/Web/HTML/Element/img). C'est un {{glossary("empty element","élément vide")}} (ce qui signifie qu'il ne contient ni texte ni balise de fermeture) qui demande au moins un attribut pour fonctionner — `src` (souvent appelé par son nom entier: _source_). L'attribut `src` contient un chemin pointant vers l'image que vous voulez intégrer, qui peut être une URL absolue ou relative, de la même manière que l'élément {{htmlelement("a")}} `href=` attribue des valeurs.
 
 > **Note :** Vous devriez lire [Une brève présentation des URL et des chemins](/fr/Apprendre/HTML/Introduction_à_HTML/Creating_hyperlinks#url) pour vous rafraîchir la mémoire avant de continuer.
 
@@ -78,7 +69,7 @@ Le code au-dessus vous donnera, à peu prés, le résultat suivant :
 
 ![A basic image of a dinosaur, embedded in a browser, with "Images in HTML" written above it](basic-image.png)
 
-> **Note :** Les éléments comme {{htmlelement("img")}} et {{htmlelement("video")}} sont souvent désignés comme des éléments "remplacés". C'est parce que le contenu et la taille de ces éléments sont définies par une ressource externe (comme un fichier image ou video), pas par le contenu de l'élément lui-même.
+> **Note :** Les éléments comme [`<img>`](/fr/docs/Web/HTML/Element/img) et {{htmlelement("video")}} sont souvent désignés comme des éléments "remplacés". C'est parce que le contenu et la taille de ces éléments sont définies par une ressource externe (comme un fichier image ou video), pas par le contenu de l'élément lui-même.
 
 > **Note :** Vous trouverez les exemples finis de cette section sur [Github](https://mdn.github.io/learning-area/html/multimedia-and-embedding/images-in-html/index.html) (regardez aussi le [code source](https://github.com/mdn/learning-area/blob/master/html/multimedia-and-embedding/images-in-html/index.html).)
 
@@ -161,7 +152,7 @@ Il n'est pas essentiel d'inclure des informations dans les images. Il est souven
 
 ### Pédagogie active : incorporer une image
 
-À vous de jouer maintenant ! Cette section dédiée à l'apprentissage interactif va vous tenir en haleine avec un simple exercice d'intégration d'image. Vous allez un peu travailler l'anglais aussi. Il vous est fourni une étiquette basique {{htmlelement("img")}} ; Il va vous falloir incorporer l'image située à l'URL suivante :
+À vous de jouer maintenant ! Cette section dédiée à l'apprentissage interactif va vous tenir en haleine avec un simple exercice d'intégration d'image. Vous allez un peu travailler l'anglais aussi. Il vous est fourni une étiquette basique [`<img>`](/fr/docs/Web/HTML/Element/img) ; Il va vous falloir incorporer l'image située à l'URL suivante :
 
 ```
 https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg
@@ -324,7 +315,7 @@ En parlant de légendes, il y a de nombreuses manières d'en ajouter qui ira ave
 
 C'est bon. Ça contient ce que vous voulez et c'est aisément stylisable en CSS. Mais il y a un problème : il n'y a rien de sensé qui relie l'image à sa légende. Ce qui peut poser des problèmes à un lecteur d'écran. Par exemple, quand vous avez 50 images, quelle légende va avec quelle image ?
 
-Une meilleure solution consiste en l'utilisation des éléments HTML5 {{htmlelement("figure")}} et {{htmlelement("figcaption")}} . Ils ont été conçus pour cela : fournir un conteneur sémantique aux objets et lier clairement cet objet à sa légende. Notre exemple précédent pourrait être réécrit comme ceci :
+Une meilleure solution consiste en l'utilisation des éléments HTML5 [`<figure>`](/fr/docs/Web/HTML/Element/figure) et {{htmlelement("figcaption")}} . Ils ont été conçus pour cela : fournir un conteneur sémantique aux objets et lier clairement cet objet à sa légende. Notre exemple précédent pourrait être réécrit comme ceci :
 
 ```html
 <figure>
@@ -341,7 +332,7 @@ Une meilleure solution consiste en l'utilisation des éléments HTML5 {{htmlelem
 </figure>
 ```
 
-L'élément {{htmlelement("figcaption")}} dit au navigateur et aux technologies d'assistance que la légende décrit le contenu de l'autre élément {{htmlelement("figure")}}.
+L'élément {{htmlelement("figcaption")}} dit au navigateur et aux technologies d'assistance que la légende décrit le contenu de l'autre élément [`<figure>`](/fr/docs/Web/HTML/Element/figure).
 
 > **Note :** D'un point de vue accessibilité, les légendes ont un rôle différent du texte [`alt`](/fr/docs/Web/HTML/Element/img#alt). Le texte [`alt`](/fr/docs/Web/HTML/Element/img#alt) ne sert qu'en absence d'image tandis que les légendes servent en même temps aux utilisateurs qui voient l'image. Les légendes et le texte `alt` devraient cependant être différents car ils apparaissent tout deux quand l'image est absente. Essayez d'enlever les images dans votre navigateur et voyez à quoi ça ressemble.
 
@@ -357,7 +348,7 @@ Cet objet peut être un ensemble d'images, des bribes de code, de l'audio, de la
 
 Dans cette section, nous allons vous demander de récupérer le code fini de la section "Pédagogie active" précédente et d'y faire ceci :
 
-- Encapsulez-le dans un élément {{htmlelement("figure")}} .
+- Encapsulez-le dans un élément [`<figure>`](/fr/docs/Web/HTML/Element/figure) .
 - Copiez le texte de l'attribut, enlevez l'attribut `title` et mettez le texte dans un élément {{htmlelement("figcaption")}} sous l'image.
 
 Si vous faites une erreur, vous pouvez toujours remettre à zéro en utilisant le bouton _Reset_ . Si vous êtes vraiment bloqué, regardez la réponse en cliquant le bouton S*how solution* :
