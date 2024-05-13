@@ -7,9 +7,9 @@ l10n:
 
 {{GlossarySidebar}}
 
-La **ligne de base** est une notion utilisée en typographie qui représente la ligne imaginaire sur laquelle repose les différents caractères d'un texte.
+La **ligne de base** est une notion utilisée en typographie qui représente la ligne imaginaire sur laquelle reposent les différents caractères d'un texte.
 
-{{GlossaryDisambiguation}}
+Les écritures d'Asie orientale n'ont pas de ligne de base. Chaque glyphe s'inscrit dans une boîte carrée, sans jambage ni hampe. Lors que des caractères d'Asie orientale sont mélangés avec des écritures ayant une ligne de base basse, le bas du caractère asiatique se situe entre la ligne de base et la hauteur du jambage.
 
 ## Voir aussi
 
