@@ -7,7 +7,7 @@ l10n:
 
 {{GlossarySidebar}}
 
-[**Adobe Flash**](https://fr.wikipedia.org/wiki/Adobe_Flash) est une technologie obsolète, développée par Adobe Systems, qui permet de créer des applications internet riches, des graphiques vectoriels et des applications multimédias.
+[**Flash**](https://fr.wikipedia.org/wiki/Adobe_Flash) est une technologie obsolète, développée par Adobe, qui permet de créer des applications web riches, du contenu multimédia et de diffuser des médias.
 
 Depuis 2021, Flash n'est plus pris en charge par Adobe ni par aucun des principaux navigateurs web.
 
