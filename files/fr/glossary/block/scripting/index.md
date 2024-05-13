@@ -7,7 +7,7 @@ l10n:
 
 {{GlossarySidebar}}
 
-En {{glossary("JavaScript")}}, un **bloc** est un ensemble d'{{glossary("statement","instructions")}} entouré d'accolades ("{}"). Par exemple, vous pouvez placer un bloc d'instructions après {{jsxref("Statements/if...else","if (condition)")}} pour indiquer à l'interpréteur d'ignorer la totalité du bloc si la condition est fausse.
+En [JavaScript](/fr/docs/Glossary/JavaScript), un **bloc** est un ensemble d'[instructions](/fr/docs/Glossary/Statement) entouré d'accolades (`{}`). Par exemple, vous pouvez placer un bloc d'instructions après un bloc conditionnel [`if`](/fr/docs/Web/JavaScript/Reference/Statements/if...else) pour indiquer au moteur JavaScript d'ignorer la totalité du bloc si la condition est fausse.
 
 ## Voir aussi
 
